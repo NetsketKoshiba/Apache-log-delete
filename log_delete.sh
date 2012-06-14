@@ -48,7 +48,7 @@ find ${log_dir} -maxdepth 1 -type f -mtime +7 | grep -v gz | xargs gzip 2>&1
 ## end report
 ##
 end_date=`date`
-/bin/mail -s "apache log_delete end" "koshiba@netsket.com" << BODY
+/bin/mail -s "apache log_delete end" "your@e-mail.address" << BODY
 
 `echo "start = ${start_date}"`
 `echo "end = ${end_date}"`
